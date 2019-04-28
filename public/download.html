@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bob Odyssey | Download</title>
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+            
+            var config = {
+                apiKey: "AIzaSyCapaCsnWlPR0Mh_dubABypeJuoUQ0SeKI",
+                authDomain: "bob-odyssey.firebaseapp.com",
+                databaseURL: "https://bob-odyssey.firebaseio.com",
+                projectId: "bob-odyssey",
+                storageBucket: "bob-odyssey.appspot.com",
+                messagingSenderId: "982609720832"
+            };
+            firebase.initializeApp(config);
+            
+            var storage = firebase.storage();
+
+            storage.refFromURL('gs://bob-odyssey.appspot.com/BobOdyssey_2-02_Win_Setup.exe').getDownloadURL().then(function(url) {
+                  var link = document.getElementById('bob-dl');
+                  link.setAttribute('href', url);
+                }).catch(function(error) {});
+        </script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/typography.css">
+		<link rel="shortcut icon" type="image/png" href="assets/img/icon/favicon.ico">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+	<body>
+		<div style="padding: 50px">
+			<h2>Your download should start shortly...</h2>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<script>
+				$(function() {
+				$('a[data-auto-download]').each(function(){
+				var $this = $(this);
+				setTimeout(function() {
+				window.location = $this.attr('href');
+				}, 600);
+				});
+				});
+			</script>
+			<p>If it doesn't, please click <u><a data-auto-download id="bob-dl" download>here</a></u></p>
+			<p>Once installed, the game may appear unresponsive: just wait - it is loading.</p>
+			<p>The game will crash if you maximise the window or run it in full screen. Instead, use windows magnifier (<i class="fab fa-windows"></i>&nbsp;+&nbsp;<b>Plus&nbsp;sign</b>)</p>
+		</div>
+	</body>
+</html>

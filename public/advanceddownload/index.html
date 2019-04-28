@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>Bob Odyssey | Downloads</title>
+        <link href="normalize.css" rel="stylesheet">
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+            
+            var config = {
+                apiKey: "AIzaSyCapaCsnWlPR0Mh_dubABypeJuoUQ0SeKI",
+                authDomain: "bob-odyssey.firebaseapp.com",
+                databaseURL: "https://bob-odyssey.firebaseio.com",
+                projectId: "bob-odyssey",
+                storageBucket: "bob-odyssey.appspot.com",
+                messagingSenderId: "982609720832"
+            };
+            firebase.initializeApp(config);
+            
+            var storage = firebase.storage();
+
+            var longV = ["0.1","0.2","0.3","1.6","1.7","1.9","1.93","2.02","2.10","2.20"];
+            var shortV = ["01","02","03","16","17","19","193","202","210","220"];
+            var i = 0;
+            
+            function setURL(long, short) {
+                storage.refFromURL('gs://bob-odyssey.appspot.com/downloads/'.concat(long,'/BobOdyssey_v',long,'.sb2')).getDownloadURL().then(function(url) {
+                  var link = document.getElementById(short.concat('sb2'));
+                  link.setAttribute('href', url);
+                }).catch(function(error) {});
+                storage.refFromURL('gs://bob-odyssey.appspot.com/downloads/'.concat(long,'/BobOdyssey_v',long,'.swf')).getDownloadURL().then(function(url) {
+                  var link = document.getElementById(short.concat('swf'));
+                  link.setAttribute('href', url);
+                }).catch(function(error) {});
+                storage.refFromURL('gs://bob-odyssey.appspot.com/downloads/'.concat(long,'/BobOdyssey_v',long,'.exe')).getDownloadURL().then(function(url) {
+                  var link = document.getElementById(short.concat('exe'));
+                  link.setAttribute('href', url);
+                }).catch(function(error) {});
+            }
+            
+            for (i=0; i<10; i++) {
+                setURL(longV[i],shortV[i]);
+            }
+            
+            storage.refFromURL('gs://bob-odyssey.appspot.com/downloads/2.10/BobOdyssey_v2.10.sb3').getDownloadURL().then(function(url) {
+                  var link = document.getElementById('210sb3');
+                  link.setAttribute('href', url);
+                }).catch(function(error) {});
+        </script>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+        <link rel="manifest" href="../favicons/site.webmanifest">
+        <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#ff0000">
+        <link rel="shortcut icon" href="../favicons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="Bob Odyssey">
+        <meta name="application-name" content="Bob Odyssey">
+        <meta name="msapplication-TileColor" content="#ff0000">
+        <meta name="msapplication-TileImage" content="../favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ff0000">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="github-markdown.css" rel="stylesheet">
+        <style>
+            .markdown-body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 45px;
+                border: 1px solid #e1e4e8;
+                border-radius: 4px;
+            }
+            .article-container {
+                padding: 60px;
+            }
+            @media (max-width: 700px) {
+                .markdown-body {
+                    padding: 15px;
+                    border: none;
+                }
+                .article-container {
+                    padding: 20px;
+                }
+            }
+            table, th, td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="article-container">
+            <article class="markdown-body">
+                <p><a href="../">&#60; Back</a></p>
+                <h3>Advanced downloads</h3>
+                <p>Download files from previous versions of Bob Odyssey.<br>All .exe's on this page are standalone, with no installer and no branding.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Version</th>
+                            <th>.sb2</th>
+                            <th>.sb3</th>
+                            <th>.swf</th>
+                            <th>.exe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>v0.1 Beta</td>
+                            <td><a id="01sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="01swf">Download</a></td>
+                            <td><a id="01exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v0.2 Beta</td>
+                            <td><a id="02sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="02swf">Download</a></td>
+                            <td><a id="02exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v0.3 Beta</td>
+                            <td><a id="03sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="03swf">Download</a></td>
+                            <td><a id="03exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v1.6</td>
+                            <td><a id="16sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="16swf">Download</a></td>
+                            <td><a id="16exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v1.7</td>
+                            <td><a id="17sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="17swf">Download</a></td>
+                            <td><a id="17exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v1.9</td>
+                            <td><a id="19sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="19swf">Download</a></td>
+                            <td><a id="19exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v1.93</td>
+                            <td><a id="193sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="193swf">Download</a></td>
+                            <td><a id="193exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v2.02</td>
+                            <td><a id="202sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="202swf">Download</a></td>
+                            <td><a id="202exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v2.10</td>
+                            <td><a id="210sb2">Download</a></td>
+                            <td><a id="210sb3">Download</a></td>
+                            <td><a id="210swf">Download</a></td>
+                            <td><a id="210exe">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>v2.20</td>
+                            <td><a id="220sb2">Download</a></td>
+                            <td>N/A</td>
+                            <td><a id="220swf">Download</a></td>
+                            <td><a id="220exe">Download</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Thank you for playing Bob Odyssey. Join us on Telegram <a href="https://t.me/BOCommunity">@BOCommunity</a> and <a href="https://t.me/BobOdyssey">@BobOdyssey</a></p>
+            </article>
+        </div>
+    </body>
+</html>
