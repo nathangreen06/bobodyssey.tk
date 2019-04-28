@@ -1,0 +1,22 @@
+dist: xenial
+
+language: node_js
+
+node_js:
+  - "11.0.0"
+
+install:
+  - gem install html-proofer
+
+script:
+  - htmlproofer ./public
+
+deploy:
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
+  message: "$TRAVIS_JOB_NUMBER"
+
+stages:
+  - name: deploy
+    if: branch = master
