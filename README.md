@@ -1,6 +1,6 @@
 # bobodyssey.tk
 
-[![Build Status](https://travis-ci.org/nathangreen06/bobodyssey.tk.svg?branch=master)](https://travis-ci.org/nathangreen06/bobodyssey.tk)
+[![Build Status](https://travis-ci.org/nathangreen06/bobodyssey.tk.svg?branch=master)](https://travis-ci.org/nathangreen06/bobodyssey.tk) ![Site status](https://img.shields.io/website/https/bobodyssey.tk.svg?down_color=red&down_message=offline&label=site%20status&up_color=4c1&up_message=online)
 
 Hi there! This repo contains the source for the [Bob Odyssey website](https://bobodyssey.tk).
 
