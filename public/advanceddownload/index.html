@@ -36,6 +36,10 @@
                   var link = document.getElementById(short.concat('exe'));
                   link.setAttribute('href', url);
                 }).catch(function(error) {});
+                storage.refFromURL('gs://bob-odyssey.appspot.com/downloads/'.concat(long,'/Changelog_',long,'.txt')).getDownloadURL().then(function(url) {
+                  var link = document.getElementById(short.concat('txt'));
+                  link.setAttribute('href', url);
+                }).catch(function(error) {});
             }
             
             for (i=0; i<15; i++) {
@@ -208,11 +212,12 @@
                             <td><a id="224exe">Download</a></td>
                         </tr>
                         <tr>
-                            <td>v2.25 [Not<br>finished]</td>
+                            <td>v2.25</td>
                             <td><a id="225sb2">Download</a></td>
                             <td>N/A</td>
                             <td><a id="225swf">N/A</a></td>
                             <td><a id="225exe">N/A</a></td>
+                            <td><a id="225txt">Download</a></td>
                         </tr>
                     </tbody>
                 </table>
