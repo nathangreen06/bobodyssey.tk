@@ -3,15 +3,16 @@
 <!--
     ╭───────────────────────────────────────╮
     │                                       │
-    │        The Bob Odyssey Website Test   │
-    │         https://bobodyssey.tk         │
+    │                Welcome 	            │
+    │       The barrier between online      │	
+    │     and offline is shockingly thin.   │
     │                                       │
     ╰───────────────────────────────────────╯
 -->
 <head>
     <!--- Basic Page Needs  -->
     <meta charset="utf-8">
-    <title>Bob Odyssey | Version 3.0</title>
+    <title>Bob</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile Specific Meta  -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,18 +29,6 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCapaCsnWlPR0Mh_dubABypeJuoUQ0SeKI",
-        authDomain: "bob-odyssey.firebaseapp.com",
-        databaseURL: "https://bob-odyssey.firebaseio.com",
-        projectId: "bob-odyssey",
-        storageBucket: "bob-odyssey.appspot.com",
-        messagingSenderId: "982609720832"
-      };
-      firebase.initializeApp(config);
-    </script>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -83,10 +72,6 @@
                                 <nav class="nav-menu">
                                     <ul>
                                         <li class="active"><a href="#home">Home</a></li>
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#video">Videos</a></li>
-                                        <li><a href="#download">Download</a></li>
-                                        <li><a href="#contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -102,247 +87,17 @@
     <!-- header area end -->
     <!-- slider area start -->
     <section class="slider-area" id="home">
-        <div class="container">
-            <div class="col-md-6 col-sm-6 hidden-xs">
-                <div class="row">
-                    <div class="slider-img col-lg-12">
-                        <img src="assets/img/mobile/imac_mockup.png" alt="slider image" style="height: 400px; width: 459px">
-                    </div>
-                </div>
-            </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="row">
                     <div class="slider-inner text-right">
-                        <h2>Travel the world with Bob</h2>
-                        <h5>In an exciting new scratch platformer</h5>
-                        <a href="https://scratch.mit.edu/projects/282544403/"><i class="fas fa-play"></i>Play now online</a>
+                        <h2>Bob</h2>
+                        <h5>Watch</h5>
+                        <a href="https://www.youtube.com/channel/UCaBlLU9t7P44Q5UJdoj8M3Q/featured"><i class="fas fa-play"></i></a>
 	                  </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- slider area end -->
-    <!-- service area start -->
-    <div class="service-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="service-single">
-                        <img src="assets/img/service/icons8-internet-96.png" alt="service image">
-                        <h2>Multi-platform</h2>
-                        <p>Works in browser, or offline</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 col-6">
-                    <div class="service-single">
-                        <img src="assets/img/service/icons8-game-controller-96.png" alt="service image">
-                        <h2>Smooth controls</h2>
-                        <p>With in-game tutorials</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 col-6">
-                    <div class="service-single">
-                        <img src="assets/img/service/icons8-new-96.png" alt="service image">
-                        <h2>Exciting gameplay</h2>
-                        <p>New levels and features added regularly</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- service area end -->
-    <!-- about area start -->
-    <div class="about-area ptb--60" id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About the game</h2>
-                <p>What is Bob Odyssey?</p>
-            </div>
-            <div class="row d-flex flex-center">
-                <div class="col-md-6 col-sm-6 hidden-xs">
-                    <div class="about-left-img">
-                        <img src="assets/img/about/4.png" alt="image">
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-12 d-flex flex-center">
-                    <div class="about-content">
-                        <p>Travel the world with Bob in this Scratch platformer. Collect power moons and catch up to Badmwaha and stop him achieving his ultimate dream. Explore many levels, overcome enemies and have a blast!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- about area end -->
-	<!-- video area start -->
-    <div class="video-area ptb--60" id="video">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <h2>Watch the trailer (Version 2.0)</h2>
-                    <a class="expand-video" href="https://www.youtube.com/watch?v=mU0FBWn1HbI"><i class="fas fa-play" style="color: red"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- video area end -->
-	<!-- screen slider area start -->
-    <section class="screen-area bg-gray ptb--100" id="screenshot">
-        <div class="container">
-            <div class="section-title">
-                <h2>Screenshots</h2>
-                <p>See what the game is like</p>
-            </div>
-            <div class="screen-slider owl-carousel">
-                <div class="single-screen">
-                    <img src="assets/img/screenshots/01.png" alt="mobile screen">
-                </div>
-                <div class="single-screen">
-                    <img src="assets/img/screenshots/02.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/03.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/04.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/05.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/06.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/07.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/08.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/09.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/10.png" alt="mobile screen">
-                </div>
-                <div class="single-screen">
-                    <img src="assets/img/screenshots/11.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/12.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/13.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/14.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/15.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/16.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/17.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/18.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/19.png" alt="mobile screen">
-                </div>
-                <div class="single-screen">
-                    <img src="assets/img/screenshots/20.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/21.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/22.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/23.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/24.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/25.png" alt="mobile screen">
-                </div>
-				<div class="single-screen">
-                    <img src="assets/img/screenshots/26.png" alt="mobile screen">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- screen slider area end -->
-	<!-- call-action area start -->
-    <section class="call-to-action ptb--100" id="download">
-        <div class="container">
-            <div class="section-title text-white">
-                <h2>Play online or download</h2>
-                <p>It's easy to play on almost any device</p>
-            </div>
-            <div class="download-btns btn-area text-center">
-				<a href="https://scratch.mit.edu/projects/282544403/"><i class="fas fa-globe"></i>Play online<br>v3.0</a>
-		   		<a href="https://scratch.mit.edu/projects/416708370/"><i class="fas fa-globe"></i>Play the beta online<br>v3.0</a>
-                <a class="expand-video" href="download.html"><i class="fab fa-windows"></i>Windows 64/32 bit<br>v2.02, exe installer</a>
-            </div>
-            <div class="download-btns-desc text-center"><br><a href="advanceddownload/">Older versions</a></div>
-        </div>
-    </section>
-    <!-- call-action area end -->
-    <!-- contact area start -->
-    <section class="contact-area ptb--100" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="contact_info">
-                        <div class="s-info">
-                            <i class="fas fa-envelope"></i>
-                            <div class="meta-content">
-                                <span><a href="mailto:bobodyssey@nathangreen.tk" target="_blank">bobodyssey@nathangreen.tk</a></span>
-                            </div>
-                        </div>
-                        <!--<div class="c-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>-->
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="contact_info">
-                        <div class="s-info">
-                            <i class="fab fa-telegram-plane"></i>
-                            <div class="meta-content">
-                                <span><a href="https://t.me/BobOdyssey" target="_blank">@BobOdyssey</a></span>
-                                <span><a href="https://t.me/BOCommunity" target="_blank">@BOCommunity</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact area end -->
-    <!-- footer area start -->
-    <footer>
-        <div class="footer-area">
-            <div class="container">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy; <script>document.write(new Date().getFullYear());</script> Nathan Green &amp; Hasan Majid, All rights reserved | This template is made with <em class="far fa-heart" aria-hidden="true"></em> by <a href="https://colorlib.com" target="_blank">Colorlib</a><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-        </div>
-    </footer>
-    <!-- footer area end -->
-
     <!-- Scripts -->
     
     <script src="assets/js/jquery-3.2.0.min.js"></script>
